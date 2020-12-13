@@ -40,6 +40,14 @@ namespace Library.Models
 
         public abstract void Sell();
 
+        protected abstract void Engage();
+
+        protected abstract void EstablishTrust();
+
+        protected abstract void DemonstrateValue();
+
+        protected abstract void Close();
+
         //public virtual override void Sell()
         //{
         //    Console.WriteLine($"Hello! I'm {this.FullName} & I will sell this item to you");

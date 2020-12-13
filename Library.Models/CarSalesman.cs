@@ -12,7 +12,7 @@ namespace Library.Models
 
         public override void Sell()
         {
-            Console.WriteLine($"Hello! I'm {this.FullName} & I will sell this car");
+            Console.WriteLine($"Hello! I'm {this.FullName}, a CarSalesman & I will sell this car");
         }
     }
 }

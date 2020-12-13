@@ -1,5 +1,7 @@
-﻿using Library.Models;
+﻿using Library.Helpers;
+using Library.Models;
 using System;
+using System.Collections.Generic;
 
 namespace OOP
 {
@@ -18,10 +20,35 @@ namespace OOP
 
             WebDeveloper dahalTheWebDeveloper = new WebDeveloper("C#");
             dahalTheWebDeveloper.Code();
+            dahalTheWebDeveloper.Code("Javascript", "Typescript");
             dahalTheWebDeveloper.Develop();
 
             DatabaseDeveloper ryanTheDatabaseDeveloper = new DatabaseDeveloper("SQL");
             ryanTheDatabaseDeveloper.Code();
+            ryanTheDatabaseDeveloper.Code("Java");
+
+            Console.WriteLine("*******************************");
+            Console.WriteLine("*******************************");
+            Console.WriteLine("*******************************");
+            Console.WriteLine("*******************************");
+            Console.WriteLine("*******************************");
+            Console.WriteLine("*******************************");
+            Console.WriteLine("*******************************");
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            List<Salesman> salesmen = new List<Salesman>()
+            {
+                new CarSalesman("Rajib", "Bhandari"),
+                new CarSalesman("Sahadev", "Bhandari"),
+                new RetailSalesMan("Puran", "Dahal"),
+                new RetailSalesMan("Pujan", "Boss")
+        };
+
+            foreach (var salesman in salesmen)
+            {
+                SalesHelper.HowISell(salesman);
+            }
         }
     }
 }
